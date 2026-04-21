@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f8fafc;
+  --text-h: #0f172a;
+  --border: #e2e8f0;
+  --accent: #3b82f6;
+}
+
+/* 1. Fix the Root - Removed the 1126px width limit */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* 2. Remove the old #center ID that forces everything into a tiny clump */
+/* Deleted #center, #next-steps, and .hero rules */
